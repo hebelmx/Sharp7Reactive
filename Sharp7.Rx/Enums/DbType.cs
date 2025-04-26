@@ -1,7 +1,7 @@
 ﻿namespace Sharp7.Rx.Enums;
 
 // see https://support.industry.siemens.com/cs/mdm/109747174?c=88343664523&lc=de-DE
-internal enum DbType
+public enum DbType
 {
     Bit,
 

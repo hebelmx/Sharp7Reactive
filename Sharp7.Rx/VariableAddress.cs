@@ -4,7 +4,7 @@ using Sharp7.Rx.Enums;
 namespace Sharp7.Rx;
 
 [NoReorder]
-internal record VariableAddress(Operand Operand, ushort DbNo, DbType Type, ushort Start, ushort Length, byte? Bit = null)
+public record VariableAddress(Operand Operand, ushort DbNo, DbType Type, ushort Start, ushort Length, byte? Bit = null)
 {
     public Operand Operand { get;  } = Operand;
     public ushort DbNo { get;  } = DbNo;

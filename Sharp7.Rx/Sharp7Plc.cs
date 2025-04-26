@@ -318,7 +318,7 @@ public class Sharp7Plc : IPlc
         return Unit.Default;
     }
 
-    private VariableAddress ParseAndVerify(string variableName, Type type)
+    public VariableAddress ParseAndVerify(string variableName, Type type)
     {
         var address = variableNameParser.Parse(variableName);
         if (!address.MatchesType(type))

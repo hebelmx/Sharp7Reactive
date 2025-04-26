@@ -1,9 +1,15 @@
 ﻿using System.Buffers.Binary;
+using System.Runtime.CompilerServices;
 using System.Text;
 using Sharp7.Rx.Enums;
 
-namespace Sharp7.Rx;
 
+
+
+[assembly: InternalsVisibleToAttribute("Sharp7.Rx.Tests")]
+[assembly: InternalsVisibleToAttribute("IndTrace7.Rx")]
+
+namespace Sharp7.Rx;
 internal static class ValueConverter
 {
     private static readonly Dictionary<Type, WriteFunc> writeFunctions = new()
